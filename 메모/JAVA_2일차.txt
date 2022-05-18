@@ -1,0 +1,38 @@
+
+1.notepad++
+ - installer > next > agree > (어떤 곳)에서 korean 확인 후 설치 진행
+ - Plug-in
+   'NppExport' 플러그인 설정
+   1) 플러그인 > NppExport > 제일 위에 클릭
+   2) cd "$(CURRENT_DIRECTORY)", javac -encoding utf-8 $(FILE_NAME) 추가
+   
+ - 매크로
+   cd "$(CURRENT_DIRECTORY)" : 자동으로 파일이 있는 값을 넣어줌(cmd에서 cd{폴더위치})
+   java $(NAME_PART) : 확장자명을 뗀 클래스 이름만 호출(cmd에서 java {파일명})
+
+ - 단축키
+    ctrl + shift + l : 한 줄 씩 삭제
+    ctrl + k : 주석
+    ctrl + 클릭 : 여러 위치에 커서 두기
+    
+2.입력
+ - import java.util.Scanner; : 스캐너 클래스 설정
+
+3.오류
+ - 문장들은 class 안에 있어야 한다. : 없을 시 컴파일 오류 발생
+ - 
+
+4.class
+ - 1개의 파일에 여러개의 class도 사용 가능하다.
+ - public이 붙는 class는 파일당 1개만 가능
+ - 모든 클래스에 main()메소드는 없어도 된다. 단, 적어도 하나의 클래스에는 main이 있어야 한다.
+
+
+
+
+
+
+
+
+
+
