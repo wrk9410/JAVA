@@ -25,13 +25,15 @@ public class DiceGame {
 		 * */
 	}
 	
-	private void checkUserGuess()
+	private boolean checkUserGuess()
 	{
 		if ( diceFace == userGuess ) {
 			System.out.println("맞았습니다.");
+			return true;
 		}
 		else {
 			System.out.println("틀렸습니다.");
+			return false;
 		}
 	}
 	
@@ -39,6 +41,9 @@ public class DiceGame {
 	{	//반복을 하고싶을 경우 해당 메소드 안에서 반복 설정
 		userGuess = getUserInput("예상값을 입력하시오: ");
 		rollDice();
-		checkUserGuess();
+		boolean result = checkUserGuess();
+		if (result) {
+			//break;
+		}
 	}
 }
