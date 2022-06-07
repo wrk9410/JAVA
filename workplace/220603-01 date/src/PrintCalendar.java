@@ -36,6 +36,7 @@ public class PrintCalendar {
 			case 6: a = "금";
 				break;
 			case 7: a = "토";
+				break;
 		}
 		return a;
 	}
@@ -54,8 +55,11 @@ public class PrintCalendar {
 		
 		int week = now.get(Calendar.DAY_OF_WEEK); // 오늘 요일 해당 숫자로 출력
 		String w = getWeek(week);
-		int month = now.get(Calendar.DAY_OF_MONTH);
-		//System.out.println(month);
+		System.out.println(w);
+		
+		now.set(Calendar.DAY_OF_MONTH, 1);
+		int month = now.get(Calendar.DAY_OF_WEEK);
+		System.out.println(month);
 
 		System.out.printf("오늘:%s %s\n",result,w);
 		System.out.println("일   월   화   수   목   금   토");
@@ -68,7 +72,7 @@ public class PrintCalendar {
 			if (blank > 0 && blank % 7 == 0) {
 				System.out.println();
 			}
-			if (blank < month) {
+			if (blank < month-1) {
 				System.out.print("   ");
 			} else {
 				now.set(2022, Calendar.JUNE, i);

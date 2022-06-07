@@ -23,24 +23,24 @@ public class Main {
 		
 		// 1.8 ~~ java.date.LocalDate*/
 		
-//		Calendar now = Calendar.getInstance(); // 처키 인형 만드는 것과 비슷하게 날짜를 만들어주는 메소드
+		Calendar now = Calendar.getInstance(); // 처키 인형 만드는 것과 비슷하게 날짜를 만들어주는 메소드
+		
+		System.out.println("상수값 확인: " + Calendar.YEAR);
+		
+		System.out.println(now.get(Calendar.YEAR)); // 오늘의 연도를 알 수 있는 명령어
+		System.out.println(now.get(Calendar.MONTH) + 1); // 오늘의 개월을 알 수 있는 명령어
+		System.out.println(now.get(Calendar.DAY_OF_MONTH)); // 오늘의 일자를 알 수 있는 명령어
+		System.out.println(now.get(Calendar.DAY_OF_WEEK)); // 숫자로 일~토까지의 요일을 알 수 있는 명령어
+		
+//		LocalDate now = LocalDate.now(); 
+//		System.out.println(now.getYear());
 //		
-//		System.out.println("상수값 확인: " + Calendar.YEAR);
+//		System.out.println(now.getMonth());
+//		System.out.println(now.getMonthValue());
 //		
-//		System.out.println(now.get(Calendar.YEAR)); // 오늘의 연도를 알 수 있는 명령어
-//		System.out.println(now.get(Calendar.MONTH) + 1); // 오늘의 개월을 알 수 있는 명령어
-//		System.out.println(now.get(Calendar.DAY_OF_MONTH)); // 오늘의 일자를 알 수 있는 명령어
-//		System.out.println(now.get(Calendar.DAY_OF_WEEK)); // 숫자로 일~토까지의 요일을 알 수 있는 명령어
-		
-		LocalDate now = LocalDate.now(); 
-		System.out.println(now.getYear());
-		
-		System.out.println(now.getMonth());
-		System.out.println(now.getMonthValue());
-		
-		System.out.println(now.getDayOfWeek());
-		System.out.println(now.getDayOfWeek().getValue());
-		
+//		System.out.println(now.getDayOfWeek());
+//		System.out.println(now.getDayOfWeek().getValue());
+//		
 	}
 
 }
