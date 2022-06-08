@@ -25,11 +25,11 @@ public class Main5 {
 	// 10 20 30 40 50 60 70 80 90 100 -1 -> 100 90 80 70 60
 	static void printRvsOther(int[] a) {
 		Scanner s = new Scanner(System.in);
-		int i = 1;
-		a = new int[i];
+		int i = 0;
+		a = new int[5];
 		while (true) {
-				System.out.printf("정수%d: ",i);
-				a[] = s.nextInt();
+				System.out.printf("정수%d: ",i+1);
+				a[i] = s.nextInt();
 				i+=1;
 			if ( s.nextInt() < 0) {
 				System.out.println("입력종료 최근 입력  5개 출력");
