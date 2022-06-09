@@ -11,6 +11,11 @@ public class Reservation {
 		}
 		System.out.println();
 	}
+	
+	public static void max(int a, int b) {
+		
+	}
+	
 	public static void reservSeat(int... arr) {
 		Scanner s = new Scanner(System.in);
 		while(true) {
@@ -20,11 +25,15 @@ public class Reservation {
 				printIndex(arr);
 				System.out.print("몇 번째 좌석을 예약하시겠습니까? ");
 				a = s.nextInt();
-				if (arr[a-1] != 1) {
-					arr[a-1] = 1;
-					System.out.println("예약되었습니다.");
+				if (0 < a && a < 11) {
+					if (arr[a-1] != 1) {
+						arr[a-1] = 1;
+						System.out.println("예약되었습니다.");
+					} else {
+						System.out.println("* 이미 예약된 좌석 입니다. *");
+					}
 				} else {
-					System.out.println("* 이미 예약된 좌석 입니다. *");
+					System.out.println("없는 좌석입니다. 초기화면으로 돌아갑니다.");
 				}
 			} else if (a == 0) {
 				System.out.print("* 예약종료 *");
@@ -38,7 +47,7 @@ public class Reservation {
 	
 	public static void main(String[] args) {
 		Reservation r = new Reservation();
-		int[] a = new int[] { 0,0,0,0,0,1,1,1,0,0 };
+		int[] a = new int[10];
 		r.reservSeat(a);
 	}
 	

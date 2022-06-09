@@ -57,10 +57,10 @@ public class Main3 {
 	public static void main(String[] args) {
 		int[] test = { 50, 70, 90, 110 };
 		int[] c = copyArray(test);
-		//System.out.println(Arrays.toString(c));
-		//sameArr(test,c);
 		
 		boolean result = isSame(test,c);
 		System.out.println(result);
+		
+		//System.out.println(Arrays.toString(c));
 	}
 }

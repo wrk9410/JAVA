@@ -79,10 +79,11 @@ public class Main4 {
 		int[] c = sumArrLength(a,b);
 		System.out.println(Arrays.toString(c));*/
 		
-		/*int[] arr = { 10, 20, 30 };
+		int[] arr = { 10, 20, 30 };
 		int[] arr2 = { 3, 4, 5, 6, 7 };
+		System.out.println(Arrays.toString(sumArray(arr, arr2)));
 		
-		int[] newArray = copy(arr,arr2.length);
+		/*int[] newArray = copy(arr,arr2.length);
 		
 		for (int i = arr.length; i < newArray.length; i++) {
 			newArray[i] = arr2[i - arr.length];
