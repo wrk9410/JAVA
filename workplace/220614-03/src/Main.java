@@ -16,7 +16,8 @@
 // 경도비만 : 25 이상 - 30 미만
 // 과체중 : 23 이상 - 25 미만
 // 정상 : 18.5 이상 - 23 미만
-// 저체중 : 18.5 미만
+// 저체중 : 18.5 미만\n
+
 
 public class Main {
 	public static void main(String[] args) {
@@ -30,7 +31,7 @@ public class Main {
 		System.out.println(m2.toString());
 		System.out.println(m3.toString());
 		
-		
+//		
 		
 		
 	}

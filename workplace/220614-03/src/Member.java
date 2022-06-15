@@ -36,14 +36,12 @@ public class Member {
 		this.weight = weight;
 	}
 	
-	public Member consoleMember() {
+	/*public Member consoleMember() {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.println("관리할 인원 입력");
 		int member = s.nextInt();
-		
-		
-	}
+	}*/
 	
 	@Override
 	public boolean equals(Object obj) {

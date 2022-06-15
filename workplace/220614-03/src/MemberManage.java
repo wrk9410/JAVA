@@ -1,8 +1,11 @@
 
 public class MemberManage extends Member {
 	
-	Member[] memberArr;
+	Member[] memberArr = new Member[10];
 	
-	public 
+	
+	
+	
+	
 
 }
