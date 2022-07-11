@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Main3 {
 
 	public static void main(String[] args) {
-		FileInputStream fis = null;
+		FileInputStream fis = null;  
 
 		try {
 
@@ -22,8 +22,8 @@ public class Main3 {
 
 			System.out.println(result);
 			System.out.println(Arrays.toString(buf));
-			for(byte b : buf) {
-				
+			for (byte b : buf) {
+				System.out.println((char) b);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

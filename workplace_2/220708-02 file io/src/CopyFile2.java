@@ -13,7 +13,7 @@ public class CopyFile2 {
 			outputStream = new FileWriter("output.txt");
 			
 			int c;
-			while ((c = inputStream.read()) != -1) {
+			while ((c = inputStream.read()) != -1) { // 반복 도중 읽는 것이 없을 경우 -1을 반환하여 조건 설정
 				System.out.println("읽은 문자 확인: " + (char) c);
 				
 				outputStream.write(c);
