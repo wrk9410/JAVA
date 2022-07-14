@@ -24,8 +24,12 @@ public class Test3_1 {
 			}
 
 		} catch (EOFException e) {
-			System.out.println(list.get(a).getPhone());
-//			e.printStackTrace();
+			try {
+				System.out.println(list.get(a).getPhone());
+//				e.printStackTrace();
+			} catch (IndexOutOfBoundsException e1) {
+				System.out.println("※입력하신 번호는 존재하지 않습니다.※");
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
