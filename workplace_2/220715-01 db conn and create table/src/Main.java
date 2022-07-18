@@ -23,7 +23,7 @@ public class Main {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} finally {
+		} finally { // 연 순서의 역순으로 닫기
 			if (stmt != null) {
 				try {
 					stmt.close();
