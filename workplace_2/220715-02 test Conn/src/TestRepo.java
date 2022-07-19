@@ -3,7 +3,7 @@ import java.util.List;
 
 public class TestRepo {
 	public static void main(String[] args) {
-		booksRepository repo = new booksRepository();
+		BooksRepository repo = new BooksRepository();
 
 		int result;
 		

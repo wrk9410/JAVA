@@ -3,9 +3,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BookConsoleApp {
-	private booksRepository repo;
+	private BooksRepository repo; // DAO 객체가 무조건 있어야하는 의존성이 생김
 
-	public BookConsoleApp(booksRepository repo) {
+	public BookConsoleApp(BooksRepository repo) {
 		this.repo = repo;
 	}
 
@@ -133,7 +133,7 @@ public class BookConsoleApp {
 	}
 
 	public static void main(String[] args) {
-		BookConsoleApp app = new BookConsoleApp(new booksRepository());
+		BookConsoleApp app = new BookConsoleApp(new BooksRepository());
 		app.menu();
 
 	}
